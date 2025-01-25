@@ -115,25 +115,38 @@ The Anime Viewer App allows users to:
 
 ## Project File Structure
 ```
-AnimeViewerApp/
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/animeviewer/
-│   │   │   │   ├── MainActivity.kt          # Home screen activity for anime list
-│   │   │   │   ├── DetailActivity.kt        # Detail screen activity for anime details
-│   │   │   ├── res/
-│   │   │   │   ├── drawable/                # Images and icons
-│   │   │   │   ├── layout/
-│   │   │   │   │   ├── activity_main.xml    # Layout for anime list
-│   │   │   │   │   ├── activity_detail.xml  # Layout for anime details
-│   │   │   │   ├── mipmap/                  # App icons
-│   │   │   │   ├── values/                  # Strings, colors, styles
-│   │   │   └── AndroidManifest.xml          # App manifest file
-│   ├── build.gradle                         # Module-level Gradle file
-│   └── proguard-rules.pro                   # ProGuard configuration
-├── build.gradle                             # Project-level Gradle file
-└── README.md                                # Project documentation
+com.example.anime_seekhoapp/
+├── api/
+│   ├── AnimeDetail.kt          # Handles Anime details API response
+│   ├── AnimeResponse.kt        # Data class for API response structure
+│   ├── ApiClient.kt            # Retrofit API client setup
+│   ├── JikanApiService.kt      # Interface defining API endpoints
+├── data/
+│   ├── Anime.kt                # Data model for Anime
+├── ui.theme/
+│   ├── Color.kt                # Theme colors
+│   ├── Theme.kt                # Main Compose theme
+│   ├── Type.kt                 # Typography styles
+├── utils/
+│   ├── NetworkUtils.kt         # Utility functions for network-related operations
+│   ├── AnimeAdapter.kt         # RecyclerView adapter for anime list
+│   ├── DetailActivity.kt       # Activity for displaying Anime details
+│   ├── MainActivity.kt         # Main activity for anime list
+├── res/
+│   ├── drawable/
+│   │   ├── border_background.xml   # Background for UI elements
+│   │   ├── error.png               # Error placeholder image
+│   │   ├── ic_launcher_background.xml # Launcher icon background
+│   │   ├── ic_launcher_foreground.xml # Launcher icon foreground
+│   │   ├── logo.png                # App logo
+│   │   ├── placeholder.png         # Placeholder image for loading
+│   ├── layout/
+│   │   ├── activity_detail.xml     # Layout for Anime detail activity
+│   │   ├── activity_main.xml       # Layout for Anime list activity
+│   │   ├── anime_item.xml          # Layout for individual anime items
+├── AndroidManifest.xml             # App configuration and permissions
+├── build.gradle                    # Module-level Gradle file
+└── proguard-rules.pro              
 ```
 
 ---
