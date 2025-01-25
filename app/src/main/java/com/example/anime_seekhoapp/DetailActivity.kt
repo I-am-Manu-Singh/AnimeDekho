@@ -105,7 +105,6 @@ class DetailActivity : ComponentActivity() {
         if (!videoUrl.isNullOrEmpty()) {
             // Show the PlayerView and hide the poster image
             videoView.visibility = View.VISIBLE
-//            posterImageView.visibility = View.GONE
 
             // Show video URL in a Toast
             Toast.makeText(this@DetailActivity, "Video URL: $videoUrl", Toast.LENGTH_LONG).show()
@@ -135,24 +134,6 @@ class DetailActivity : ComponentActivity() {
             // Show a Toast message for no trailer URL
             Toast.makeText(this@DetailActivity, "No trailer URL available", Toast.LENGTH_SHORT)
                 .show()
-//
-//            // Show the poster image if available
-//            if (posterUrl.isNotEmpty()) {
-//                posterImageView.visibility = View.VISIBLE
-//                Picasso.get()
-//                    .load(posterUrl) // Load the poster image
-//                    .placeholder(R.drawable.placeholder) // Optional: placeholder image
-//                    .error(R.drawable.error) // Optional: error fallback image
-//                    .into(posterImageView)
-//            } else {
-//                // Handle case where both trailer and poster are unavailable
-//                posterImageView.visibility = View.GONE
-//                Toast.makeText(
-//                    this@DetailActivity,
-//                    "No trailer or poster available",
-//                    Toast.LENGTH_SHORT
-//                ).show()
-//            }
         }
 
         // Handle activity lifecycle
