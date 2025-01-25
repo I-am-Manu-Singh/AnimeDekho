@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E4DCED"
+    android:padding="16dp">
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anime Show Details"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/poster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:contentPadding="6dp">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anime Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Episodes: 0"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating: 0"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genres: "
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+</LinearLayout>
