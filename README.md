@@ -114,7 +114,7 @@ The Anime Viewer App allows users to:
 ---
 
 ## Project File Structure
-```
+```yaml
 com.example.anime_seekhoapp/
 ├── api/
 │   ├── AnimeDetail.kt          # Handles Anime details API response
