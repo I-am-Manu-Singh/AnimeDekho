@@ -160,22 +160,9 @@ com.example.anime_seekhoapp/
 4. Build and run the app on an emulator or a physical device.
 
 ---
-## Future Enhancements
-1. Search Feature:
-Add a search bar to allow users to find specific anime.
+## Screenshots & Demo Video
 
-2. Pagination:
-Implement pagination for the anime list to improve performance.
-
-3. Offline Mode:
-Cache trailers and posters for offline viewing.
-
-4. Error Handling:
-
-5. Add comprehensive error handling for API failures and invalid data.
-Favorites:
-
-6. Allow users to mark anime as favorites for quick access.
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/_xLvPjLWqo0/0.jpg)](https://www.youtube.com/watch?v=_xLvPjLWqo0)
 
 ---
 ## Contributing
